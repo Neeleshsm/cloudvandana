@@ -1,0 +1,45 @@
+You can reverse the words in a sentence by splitting the sentence into words, reversing each word, and then joining them back together. Here's the JavaScript code to do that:
+function reverseWordsInSentence(sentence) {
+    // Split the sentence into words
+    const words = sentence.split(' ');
+    
+    // Reverse each word and join them back together
+    const reversedWords = words.map(word => reverseWord(word));
+    const reversedSentence = reversedWords.join(' ');
+
+    return reversedSentence;
+}
+
+function reverseWord(word) {
+    return word.split('').reverse().join('');
+}
+
+const inputSentence = "This is a sunny day";
+const reversedSentence = reverseWordsInSentence(inputSentence);
+console.log(reversedSentence);
+
+Output:
+For the input sentence "This is a sunny day," the output will be:
+
+B. Sorting an Array in Descending Order:
+
+You can sort an array in descending order by providing a custom sorting function to the sort() method. Here's how you can do it step by step:
+// Sample array of numbers
+const numbers = [5, 2, 9, 1, 5, 6];
+
+// Step 1: Define the custom sorting function
+function descendingOrder(a, b) {
+    return b - a; // Compare in descending order
+}
+
+// Step 2: Use the custom sorting function to sort the array
+numbers.sort(descendingOrder);
+
+// Step 3: Print the sorted array
+console.log(numbers);
+Output:
+The output will be the sorted array in descending order:
+
+csharp
+[9, 6, 5, 5, 2, 1]
+
